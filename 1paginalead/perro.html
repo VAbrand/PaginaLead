@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidados Básicos del Perro - Blog de Mascotas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>🐾 El Rincón de las Mascotas</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perro.html" class="active">Cuidados del Perro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-perro">
+        <!-- Cuidados básicos -->
+        <section class="content-box">
+            <h2>Cuidados básicos para una mascota</h2>
+            <p>Tener un perro implica una gran responsabilidad para asegurar su bienestar físico y emocional. A continuación, los pilares fundamentales para su cuidado diario:</p>
+            <ul class="styled-list">
+                <li><strong>Alimentación equilibrada:</strong> Proveer alimento de alta calidad adecuado para su edad, tamaño y nivel de actividad.</li>
+                <li><strong>Hidratación constante:</strong> Agua fresca y limpia disponible las 24 horas del día.</li>
+                <li><strong>Paseos y ejercicio diario:</strong> Esencial para su salud mental, quema de energía y socialización.</li>
+                <li><strong>Visitas veterinarias:</strong> Vacunación al día, desparasitación regular y revisiones preventivas.</li>
+                <li><strong>Higiene:</strong> Baños periódicos, cepillado de pelo, corte de uñas y limpieza dental.</li>
+            </ul>
+        </section>
+
+        <!-- Fotografía y Pie de foto -->
+        <section class="content-box text-center">
+            <div class="photo-wrapper">
+                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a" alt="Perro feliz en el parque">
+                <p class="image-caption"><em>Pie de foto:</em> Un cachorro disfrutando de un día soleado al aire libre, reflejando la vitalidad del ejercicio diario.</p>
+            </div>
+        </section>
+
+        <!-- Quote relacionado -->
+        <section class="content-box">
+            <blockquote class="custom-quote">
+                "Un perro es la única criatura en la tierra que te ama más de lo que se ama a sí mismo." 
+                <footer>— Josh Billings</footer>
+            </blockquote>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Pregunta y Botón Más Mascotas -->
+        <section class="content-box text-center">
+            <h2>¿Qué mascota elegirías?</h2>
+            <p>Cada animal tiene personalidades únicas y requiere diferentes tipos de atención y espacio en el hogar. ¿Te inclinas por la lealtad incondicional de un perro, la independencia elegante de un gato, o prefieres otro compañero?</p>
+            
+            <div class="button-group">
+                <a href="https://www.purina.es/encuentra-mascota" target="_blank" class="btn-external">🐾 Más Mascotas (Guía Externa)</a>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Nos interesa tu opinión y Formulario -->
+        <section class="content-box opinion-section">
+            <h2>¡Queremos conocer tu opinión!</h2>
+            <p>Nos interesa tu opinión sobre este espacio. Cuéntanos tu experiencia o déjanos saber qué te pareció este artículo sobre el cuidado canino.</p>
+
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mascota_favorita">¿Cuál es tu mascota favorita?</label>
+                    <select id="mascota_favorita" name="mascota_favorita">
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="ave">Ave</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Tu Opinión o Comentario:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu opinión..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Opinión 🚀</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blog de Mascotas & Cultura. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,382 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barra de Navegación */
+header {
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #1abc9c;
+}
+
+/* Sección Hero (Index) */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2 {
+    font-size: 2.3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 350px;
+}
+
+/* Botones */
+.btn-primary, .btn-secondary, .btn-external, .btn-submit {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover, .btn-secondary:hover, .btn-external:hover, .btn-submit:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #3498db;
+}
+.btn-secondary:hover {
+    background-color: #2980b9;
+}
+
+.btn-external {
+    background-color: #e67e22;
+}
+.btn-external:hover {
+    background-color: #d35400;
+}
+
+/* Sección de Medios */
+.media-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.media-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.media-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.media-card h3 {
+    margin-bottom: 15px;
+    color: #34495e;
+    font-size: 1.2rem;
+}
+
+.media-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.caption {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.media-card audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Sección de Chihiro */
+.chihiro-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.chihiro-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.chihiro-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.chihiro-img {
+    flex: 1;
+}
+
+.chihiro-img img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.chihiro-text {
+    flex: 1.2;
+}
+
+.chihiro-text h3 {
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.chihiro-text p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Contenedor Página Perro */
+.container-perro {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.content-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.content-box h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.styled-list {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.styled-list li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.photo-wrapper img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.image-caption {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+}
+
+/* Cita (Quote) */
+.custom-quote {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #2c3e50;
+    border-left: 5px solid #1abc9c;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.custom-quote footer {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #7f8c8d;
+    font-style: normal;
+    background: none;
+    padding: 0;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 10px 0;
+}
+
+/* Formulario */
+.opinion-section form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.3);
+}
+
+/* Pie de página */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Adaptabilidad móvil */
+@media (max-width: 768px) {
+    .hero-section, .chihiro-container {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
